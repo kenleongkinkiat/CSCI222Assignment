@@ -2,9 +2,7 @@
 //  Stock.cpp
 //  CSCI222
 //
-//  Created by Sihui on 4/2/18.
-//  Copyright © 2018 Sihui. All rights reserved.
-//
+
 
 #include <iostream>
 #include <string.h>
@@ -48,10 +46,44 @@ Stock::Stock(int stockID, string stockDesc, string stockCat, string stockSubCat,
 
 void Stock::readData()
 {
-    // read stockdata
+    // read stockdata from .txt into stockRcds
+    ifstream infile(fileName);
+    
+    if(!infile)
+    {
+        cout << fileName << " error opening" << endl << endl;
+    }
+    
+    string line;
+    int i = 0;
+    
+    if(infile.is_open())
+    {
+      while(infile.good())
+      {
+          getline(infile,line);
+          stockRcd.push_back(line);
+          i++;
+      }
+    }
+
+    infile.close();
+
+ 
 }
 
 void Stock::updateFile()
 {
-    // update File
+    // update File to .txt
+
+    string STRING;
+    ifstream infile;
+    infile.open ("Stock.txt");
+        while(!infile.eof) // To get you all the lines.
+        {
+            getline(infile,STRING); // Saves the line in STRING.
+            
+        }
+    infile.close();
+
 }

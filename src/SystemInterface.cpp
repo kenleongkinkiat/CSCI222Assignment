@@ -1,10 +1,8 @@
 //
-//  main.cpp
+//  SystemInterface
 //  CSCI222
 //
-//  Created by Sihui on 4/2/18.
-//  Copyright © 2018 Sihui. All rights reserved.
-//
+
 
 
 // CSCI 222 A2
