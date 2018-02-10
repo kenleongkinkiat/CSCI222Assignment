@@ -76,14 +76,4 @@ void Stock::updateFile()
 {
     // update File to .txt
 
-    string STRING;
-    ifstream infile;
-    infile.open ("Stock.txt");
-        while(!infile.eof) // To get you all the lines.
-        {
-            getline(infile,STRING); // Saves the line in STRING.
-            
-        }
-    infile.close();
-
 }

@@ -12,6 +12,11 @@
 #include <iostream>
 using namespace std;
 
+StockModification stockMod;
+StockSearch stockSearch;
+SummaryReport report;
+
+
 class WM_SystemInterface {
 private:
     int thresholdValue;
@@ -43,7 +48,9 @@ void WM_SystemInterface::displayMenu ()
     
     switch (userChoice)
     {
-        case 'a' :
+        case 'a' : stockMod.addStock();
+                break;
+                
     }
     
     

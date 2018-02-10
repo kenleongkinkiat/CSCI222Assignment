@@ -9,12 +9,13 @@
 
 using namespace std;
 
+Manager m;
 
 int main()
 {
     // login
-    login();
-    
+    m.readData();
+    login();   
 }
 
 void login()
@@ -27,20 +28,33 @@ void login()
     cout << "\nPassword: ";
     cin >> pass;
     
-    if( verify(user,pass))
+    if(verify(user,pass) == "Login Successful") // if password and user name is correct
     {
-        
+        // WM_SystemInterface 
+        WM_SystemInterface sys;
+        sys.displayMenu();        
     }
-    
+    else if(verify(user,pass) == "You have exceeded the max. amount of login tries.")
+    {
+        cout << verify(user,pass) << endl;
+        exit(0);
+
+    }  
+    else
+    {
+        cout << verify(user,pass) << endl;
+        login();
+    }
+
     
 }
 
-void verify(string user, string pass)
+string verify(string user, string pass)
 {
     // to verify username and password
     // access Manager database
-    
-    
-    
-    
+
+    return m.verifyManager(user,pass);
 }
+    
+
