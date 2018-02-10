@@ -1,0 +1,11 @@
+LOTR Vol1 - The Fellowship of the Ring:J. R. Tolkein:15.50:20:10
+LOTR Vol2 - The Two Towers:J. R. Tolkein:16.50:30:10
+LOTR Vol3 - The Return of the King:J. R. Tolkein:17.50:40:10
+Winnie the Pooh:A. A. Milne:18.01:10:5
+The House at Pooh Corner:A. A. Milne:19.01:20:15
+C++ Programming in 21 Days:J. D. Edwards:50.03:15:10
+C++ Programming in 21 Days:Paul Thompson:45.00:18:10
+C++ Programming in 21 Days:Hacker Jane:30.60:18:10
+Talking Cock:Colin Goh:13.80:20:10
+Talking Pig:Babe Babe:14.25:15:10
+Talking Cow:Moo Allen:16.50:15:10
